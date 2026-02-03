@@ -1,7 +1,7 @@
 # game-ular
 tugas sentra python
 
-🐍 Deskripsi Game Ular (Snake Game)
+1.🐍 Deskripsi Game Ular (Snake Game)
 
 Game Ular adalah game klasik sederhana yang dibuat menggunakan bahasa pemrograman Python dengan bantuan library Tkinter sebagai tampilan grafis.
 Pada game ini, pemain mengontrol seekor ular yang bergerak di dalam arena kotak-kotak untuk memakan apel.
@@ -39,3 +39,31 @@ Tujuan dari game ini adalah:
 Mengumpulkan skor sebanyak mungkin
 Melatih kecepatan berpikir dan refleks pemain
 Menghindari tabrakan selama permainan berlangsung
+
+2.penjelasan high score
+
+High Score adalah skor tertinggi yang pernah dicapai oleh pemain dalam game ular.
+Fitur ini digunakan untuk menyimpan pencapaian terbaik pemain, sehingga pemain memiliki target untuk mendapatkan skor yang lebih tinggi di setiap permainan.
+Pada game ini, High Score tidak hilang meskipun game ditutup, karena disimpan ke dalam sebuah file bernama highscore.txt.
+
+⚙️ Cara Kerja High Score
+
+Saat game dijalankan, sistem akan:
+Mengecek apakah file highscore.txt tersedia
+Jika ada, skor tertinggi akan dibaca dan ditampilkan
+Jika tidak ada, high score akan bernilai 0
+
+Selama permainan:
+Skor akan bertambah setiap kali ular memakan apel
+
+Saat Game Over:
+Skor saat ini dibandingkan dengan High Score
+Jika skor lebih besar, maka:
+High Score diperbarui
+Data disimpan ke file highscore.txt
+
+💾 Fungsi High Score:
+🏁 Memberi tantangan kepada pemain untuk mengalahkan skor sebelumnya
+📊 Menjadi indikator kemampuan pemain
+💡 Membuat game lebih menarik dan kompetitif
+💾 Menyimpan data secara permanen menggunakan file
